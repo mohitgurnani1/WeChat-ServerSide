@@ -10,8 +10,8 @@ private static InputStreamReader inputStreamReader;
 			
 public static void main(String args[])throws IOException
 		{
-			ServerSocket ss=new ServerSocket(4456);
-			
+			ServerSocket ss=new ServerSocket(5577);
+			while(true){
 				Socket client=ss.accept();
 		
 				inputStreamReader = new InputStreamReader(client.getInputStream());
@@ -22,7 +22,7 @@ public static void main(String args[])throws IOException
 				inputStreamReader.close();
 				client.close();
 
-
+			}
 				
 		}
 	}
