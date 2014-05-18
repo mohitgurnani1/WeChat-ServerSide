@@ -10,7 +10,7 @@ private static InputStreamReader inputStreamReader;
 			
 public static void main(String args[])throws IOException
 		{
-			ServerSocket ss=new ServerSocket(5577);
+			ServerSocket ss=new ServerSocket(5578);
 			while(true){
 				Socket client=ss.accept();
 		
